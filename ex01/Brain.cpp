@@ -1,29 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Cat.hpp                                            :+:      :+:    :+:   */
+/*   Brain.cpp                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: majkijew <majkijew@student.42heilbronn.de> +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/01/10 18:53:57 by majkijew          #+#    #+#             */
-/*   Updated: 2026/01/12 18:53:00 by majkijew         ###   ########.fr       */
+/*   Created: 2026/01/12 18:10:04 by majkijew          #+#    #+#             */
+/*   Updated: 2026/01/12 18:48:50 by majkijew         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef CAT_HPP
-# define CAT_HPP
-#include <iostream>
-#include "Animal.hpp"
 #include "Brain.hpp"
-class Cat : public Animal {
-	private:
-		Brain* _brain;
-	public:
-		Cat();
-		Cat(const Cat &other);
-		Cat &operator=(const Cat &other);
-		~Cat();
-		void makeSound() const ;
-};
 
-#endif
+Brain::Brain() {
+	std::cout << "Brain default constructor called\n";
+}
+
+Brain::~Brain() {
+	std::cout << "Brain destructor called\n";
+}
