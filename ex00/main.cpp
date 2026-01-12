@@ -6,13 +6,15 @@
 /*   By: majkijew <majkijew@student.42heilbronn.de> +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/10 17:58:37 by majkijew          #+#    #+#             */
-/*   Updated: 2026/01/12 16:34:47 by majkijew         ###   ########.fr       */
+/*   Updated: 2026/01/12 18:02:01 by majkijew         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Animal.hpp"
+#include "WrongAnimal.hpp"
 #include "Dog.hpp"
 #include "Cat.hpp"
+#include "WrongCat.hpp"
 
 int main()
 {
@@ -25,4 +27,12 @@ int main()
     j->makeSound();
     meta->makeSound();
 
+	const WrongAnimal* w = new WrongAnimal();
+	const WrongAnimal* wd = new WrongCat();
+    // std::cout << wd->getType() << " " << std::endl;
+	w->makeSound();
+	wd->makeSound();
+
+	// const WrongAnimal* t = new Cat();
+	
 }
