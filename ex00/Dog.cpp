@@ -6,7 +6,7 @@
 /*   By: majkijew <majkijew@student.42heilbronn.de> +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/10 17:56:34 by majkijew          #+#    #+#             */
-/*   Updated: 2026/01/10 17:58:11 by majkijew         ###   ########.fr       */
+/*   Updated: 2026/01/12 15:44:22 by majkijew         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,3 +15,7 @@
 Dog::Dog(/* args */) {}
 
 Dog::~Dog() {}
+
+void Dog::makeSound() {
+    std::cout << "* Dog: woof woof *\n";
+}

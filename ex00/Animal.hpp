@@ -6,7 +6,7 @@
 /*   By: majkijew <majkijew@student.42heilbronn.de> +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/10 17:51:36 by majkijew          #+#    #+#             */
-/*   Updated: 2026/01/10 17:55:38 by majkijew         ###   ########.fr       */
+/*   Updated: 2026/01/12 15:52:27 by majkijew         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,12 +16,17 @@
 
 class Animal
 {
-	private:
+	protected: //the diffrence between protected and private
 		std::string _type;
 	public:
-	Animal(std::string type);
-	Animal &operator=(const Animal &other);
-	~Animal();
+		Animal();
+		Animal(std::string type);
+		Animal(const Animal &other);
+		Animal &operator=(const Animal &other);
+		~Animal();
+		void setType(std::string type);
+		std::string getType();
+		virtual void makeSound();
 };
 
 #endif
