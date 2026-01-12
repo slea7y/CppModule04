@@ -6,16 +6,21 @@
 /*   By: majkijew <majkijew@student.42heilbronn.de> +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/10 17:56:34 by majkijew          #+#    #+#             */
-/*   Updated: 2026/01/12 15:44:22 by majkijew         ###   ########.fr       */
+/*   Updated: 2026/01/12 16:33:55 by majkijew         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Dog.hpp"
 
-Dog::Dog(/* args */) {}
+Dog::Dog() {
+	this->setType("Dog");
+	std::cout << "Dog Default constructor called\n";
+}
 
-Dog::~Dog() {}
+Dog::~Dog() {
+	std::cout << "Dog destructor\n";
+}
 
-void Dog::makeSound() {
-    std::cout << "* Dog: woof woof *\n";
+void Dog::makeSound() const {
+	std::cout << "* Dog: woof woof *\n";
 }

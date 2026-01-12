@@ -6,7 +6,7 @@
 #    By: majkijew <majkijew@student.42heilbronn.de> +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/12/18 11:01:48 by majkijew          #+#    #+#              #
-#    Updated: 2026/01/09 23:16:28 by majkijew         ###   ########.fr        #
+#    Updated: 2026/01/12 16:23:31 by majkijew         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -14,7 +14,7 @@ CXX := c++
 CXXFLAGS := -Wall -Wextra -Werror -std=c++98
 
 NAME := a.out
-SRC := main.cpp Fixed.cpp
+SRC := main.cpp Animal.cpp Dog.cpp Cat.cpp
 
 OBJ_DIR := obj
 OBJ := $(SRC:%.cpp=$(OBJ_DIR)/%.o)

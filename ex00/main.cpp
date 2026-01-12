@@ -6,7 +6,7 @@
 /*   By: majkijew <majkijew@student.42heilbronn.de> +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/10 17:58:37 by majkijew          #+#    #+#             */
-/*   Updated: 2026/01/12 15:53:09 by majkijew         ###   ########.fr       */
+/*   Updated: 2026/01/12 16:34:47 by majkijew         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,8 @@ int main()
     const Animal* i = new Cat();
     std::cout << j->getType() << " " << std::endl;
     std::cout << i->getType() << " " << std::endl;
-    i->makeSound(); //will output the cat sound!
+	i->makeSound(); //will output the cat sound!
     j->makeSound();
     meta->makeSound();
+
 }

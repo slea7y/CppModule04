@@ -6,7 +6,7 @@
 /*   By: majkijew <majkijew@student.42heilbronn.de> +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/10 17:56:15 by majkijew          #+#    #+#             */
-/*   Updated: 2026/01/12 15:44:06 by majkijew         ###   ########.fr       */
+/*   Updated: 2026/01/12 16:28:19 by majkijew         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,14 +14,13 @@
 # define DOG_HPP
 
 #include <iostream>
+#include "Animal.hpp"
 
 class Dog : public Animal {
-	private:
-		/* data */
 	public:
-		Dog(/* args */);
+		Dog();
 		~Dog();
-		void makeSound();
+		void makeSound() const ;
 };
 
 #endif
