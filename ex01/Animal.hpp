@@ -6,7 +6,7 @@
 /*   By: majkijew <majkijew@student.42heilbronn.de> +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/10 17:51:36 by majkijew          #+#    #+#             */
-/*   Updated: 2026/01/12 18:12:55 by majkijew         ###   ########.fr       */
+/*   Updated: 2026/01/17 17:58:11 by majkijew         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@
 
 class Animal
 {
-	protected: //the diffrence between protected and private
+	protected:
 		std::string _type;
 	public:
 		Animal();

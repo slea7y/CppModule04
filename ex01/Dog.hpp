@@ -6,7 +6,7 @@
 /*   By: majkijew <majkijew@student.42heilbronn.de> +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/10 17:56:15 by majkijew          #+#    #+#             */
-/*   Updated: 2026/01/12 19:27:10 by majkijew         ###   ########.fr       */
+/*   Updated: 2026/01/17 18:12:02 by majkijew         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ class Dog : public Animal {
 		Dog();
 		Dog(const Dog &other);
 		Dog &operator=(const Dog &other);
-		~Dog();
+		virtual ~Dog();
 		void makeSound() const ;
 };
 
