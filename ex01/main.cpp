@@ -6,7 +6,7 @@
 /*   By: majkijew <majkijew@student.42heilbronn.de> +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/10 17:58:37 by majkijew          #+#    #+#             */
-/*   Updated: 2026/01/17 18:16:12 by majkijew         ###   ########.fr       */
+/*   Updated: 2026/01/18 16:32:11 by majkijew         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,10 +24,10 @@ int main()
     Cat cat;
 
     std::cout << "\n===== SETTING IDEAS =====\n";
-    dog.getBrain()->setIdea(0, "I want a bone");
-    dog.getBrain()->setIdea(1, "Play fetch");
-    cat.getBrain()->setIdea(0, "I want fish");
-    cat.getBrain()->setIdea(1, "Sleep on keyboard");
+    dog.getBrain()->setIdea("I want a prada bag", 0);
+    dog.getBrain()->setIdea("Play New Bottega Azelia Banks", 1);
+    cat.getBrain()->setIdea("I hat taylor swift",0);
+    cat.getBrain()->setIdea("Slay!", 1);
 
     std::cout << "\n===== READING IDEAS =====\n";
     std::cout << "Dog idea 0: " << dog.getBrain()->getIdea(0) << "\n";
