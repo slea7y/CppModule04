@@ -6,7 +6,7 @@
 /*   By: majkijew <majkijew@student.42heilbronn.de> +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/10 18:55:08 by majkijew          #+#    #+#             */
-/*   Updated: 2026/01/12 18:53:13 by majkijew         ###   ########.fr       */
+/*   Updated: 2026/01/18 15:08:44 by majkijew         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 Cat::Cat() {
 	std::cout << "Cat default constructor called\n";
 	this->setType("Cat");
-	_brain = new Brain;
+	_brain = new Brain();
 }
 
 Cat::Cat(const Cat &other) {
