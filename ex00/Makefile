@@ -6,12 +6,12 @@
 #    By: majkijew <majkijew@student.42heilbronn.de> +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/12/18 11:01:48 by majkijew          #+#    #+#              #
-#    Updated: 2026/01/12 18:00:40 by majkijew         ###   ########.fr        #
+#    Updated: 2026/01/18 16:44:18 by majkijew         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 CXX := c++
-CXXFLAGS := -Wall -Wextra -Werror -std=c++98
+CXXFLAGS := -Wall -Wextra -Werror -std=c++17
 
 NAME := a.out
 SRC := main.cpp Animal.cpp Dog.cpp Cat.cpp WrongAnimal.cpp WrongCat.cpp

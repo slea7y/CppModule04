@@ -6,7 +6,7 @@
 /*   By: majkijew <majkijew@student.42heilbronn.de> +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/10 18:55:08 by majkijew          #+#    #+#             */
-/*   Updated: 2026/01/12 16:31:11 by majkijew         ###   ########.fr       */
+/*   Updated: 2026/01/18 17:10:11 by majkijew         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,17 @@
 Cat::Cat() {
 	std::cout << "Cat default constructor called\n";
 	this->setType("Cat");
+}
+
+Cat::Cat(const Cat &obj) : Animal(obj) {
+	std::cout << "Cat copy constructor called\n";
+}
+
+Cat &Cat::operator=(const Cat &other) {
+	if (this != &other)
+		Animal::operator=(other);
+	std::cout << "Cat copy assigment operator called\n";
+	return (*this);
 }
 
 Cat::~Cat() {

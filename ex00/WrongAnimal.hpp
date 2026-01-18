@@ -6,7 +6,7 @@
 /*   By: majkijew <majkijew@student.42heilbronn.de> +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/12 16:41:13 by majkijew          #+#    #+#             */
-/*   Updated: 2026/01/12 17:53:56 by majkijew         ###   ########.fr       */
+/*   Updated: 2026/01/18 16:45:23 by majkijew         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,14 +16,15 @@
 #include <iostream>
 
 class WrongAnimal {
-	protected: //the diffrence between protected and private
+	protected:
 		std::string _type;
 	public:
 		WrongAnimal();
 		WrongAnimal(std::string type);
 		WrongAnimal(const WrongAnimal &other);
 		WrongAnimal &operator=(const WrongAnimal &other);
-		~WrongAnimal();
+		virtual ~WrongAnimal();
+		// ~WrongAnimal();
 		void setType(std::string type);
 		std::string getType() const;
 		virtual void makeSound() const;

@@ -6,7 +6,7 @@
 /*   By: majkijew <majkijew@student.42heilbronn.de> +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/10 18:53:57 by majkijew          #+#    #+#             */
-/*   Updated: 2026/01/12 16:29:02 by majkijew         ###   ########.fr       */
+/*   Updated: 2026/01/18 17:04:56 by majkijew         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,9 +15,10 @@
 #include <iostream>
 #include "Animal.hpp"
 class Cat : public Animal {
-	private:
 	public:
 		Cat();
+		Cat(const Cat &obj);
+		Cat &operator=(const Cat &obj);
 		~Cat();
 		void makeSound() const ;
 };
