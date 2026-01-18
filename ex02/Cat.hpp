@@ -6,7 +6,7 @@
 /*   By: majkijew <majkijew@student.42heilbronn.de> +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/10 18:53:57 by majkijew          #+#    #+#             */
-/*   Updated: 2026/01/12 18:53:00 by majkijew         ###   ########.fr       */
+/*   Updated: 2026/01/17 18:32:34 by majkijew         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,8 +22,9 @@ class Cat : public Animal {
 		Cat();
 		Cat(const Cat &other);
 		Cat &operator=(const Cat &other);
-		~Cat();
+		virtual ~Cat();
 		void makeSound() const ;
+		Brain* getBrain() const;
 };
 
 #endif
